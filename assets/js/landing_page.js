@@ -50,24 +50,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 })
 
-// Mostrar/ocultar menu
-let nav = document.querySelector(".navbar");
-let buttonMenu = document.querySelector(".btn_menu");
+ // Mostrar/ocultar menu
+ let nav = document.querySelector(".navbar");
+ let buttonMenu = document.querySelector(".btn_menu");
 
-buttonMenu.addEventListener("click", function () {
-  nav.classList.toggle("active");
-  changeIcon();
-})
+ buttonMenu.addEventListener("click", function () {
+     nav.classList.toggle("active");
+     changeIcon();
+ });
 
-function changeIcon() {
-  let iconBtnMenu = document.querySelector(".btn_menu i")
+ function changeIcon() {
+     let iconBtnMenu = document.querySelector(".btn_menu i");
 
-  if (iconBtnMenu.classList.contains("bx-menu-alt-right")) {
-    iconBtnMenu.classList.remove("bx-menu-alt-right")
-    iconBtnMenu.classList.add("bx-x")
-  }
-   else {
-    iconBtnMenu.classList.remove("bx-x")
-    iconBtnMenu.classList.add("bx-menu-alt-right")
-  }
-}
+     if (iconBtnMenu.classList.contains("bx-menu-alt-right")) {
+         iconBtnMenu.classList.remove("bx-menu-alt-right");
+         iconBtnMenu.classList.add("bx-x");
+     } else {
+         iconBtnMenu.classList.remove("bx-x");
+         iconBtnMenu.classList.add("bx-menu-alt-right");
+     }
+ }
+
+ // Agregar event listener a cada enlace del menú
+ let navLinks = document.querySelectorAll(".navbar_link");
+ navLinks.forEach(link => {
+     link.addEventListener("click", function () {
+         nav.classList.remove("active");
+         changeIcon();
+     });
+ });
