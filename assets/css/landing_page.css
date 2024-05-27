@@ -504,15 +504,28 @@ header {
   }
 
   .content_model {
-    width: 600px;
+    width: 550px;
     margin-top: -150px;
   }
 
   .content_model model-viewer {
-    width: 550px;
+    width: 500px;
   }
 
   .btns_text {
     justify-content: space-around;
+  }
+  /* Seccion de desarrolladres */
+  .fila_desarrolladores {
+    height: 120px;
+  }
+  .perfil_desarrollador img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .perfil_desarrollador p {
+    margin-top: 10px;
+    font-size: 0.4em;
   }
 }
