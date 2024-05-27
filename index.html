@@ -32,7 +32,7 @@
   </header>
 
   <!-- Main -->
-  <main class="content" id="inicio">
+  <main class="inicio" id="inicio">
     <!-- Contenido de texto -->
     <div class="content_text">
       <h1>¡Hola ESCOMunidad!</h1>
@@ -48,25 +48,109 @@
     </div>
     <!-- Modelo 3D -->
     <div class="content_model">
-      <model-viewer camera-controls camera-orbit="15deg 70deg 2m" autoplay alt="Model" src="./assets/model/Render.glb">
+      <model-viewer camera-controls camera-orbit="210deg 70deg 1m" autoplay alt="Model" src="./assets/model/Render.glb">
       </model-viewer>
       <!-- <img src="./assets/img/model3d.png" alt="Modleo 3D"> -->
     </div>
   </main>
-  
+
   <hr>
 
   <!-- Seccion de funciones -->
   <section class="funciones" id="funciones">
+    <!-- Titulo de la seccion -->
     <h2>FUNCIONES</h2>
+    <!-- Contenedor de funciones -->
+    <div class="contenedor_funciones">
+      <!-- Funcion de modeado 3D -->
+      <div class="contenedor_funcion">
+        <div class="funcion_gif">
+          <img src="./assets/img/modelo.gif" alt="Ejemplo GIF">
+        </div>
+        <div class="funcion_texto">
+          <h3>CONSULTAS POR TEXTO</h3>
+          <p>Puedes interactuar con el modelo 3D de la ESCOM al desplazar el cursos sobre él, además
+            de explorar la ubicación de salones y oficinas dentro de las instalaciones.</p>
+        </div>
+      </div>
+      <!-- Funcion de consultas por texto -->
+      <div class="contenedor_funcion">
+        <div class="funcion_texto">
+          <h3>CONSULTAS POR VOZ</h3>
+          <p>Utiliza la caja de texto para realizar consultas al modelo de Inteligencia Artificial y obtener respuestas
+            precisas y rápidas.</p>
+        </div>
+        <div class="funcion_gif">
+          <img src="./assets/img/texto.gif" alt="Ejemplo GIF">
+        </div>
+      </div>
+      <!-- Funcion de consultas por voz -->
+      <div class="contenedor_funcion">
+        <div class="funcion_gif">
+          <img src="./assets/img/voz.gif" alt="Ejemplo GIF">
+        </div>
+        <div class="funcion_texto">
+          <h3>CONSULTAS POR VOZ</h3>
+          <p>Tienes la opción de hacer consultas mediante tuu voz. Al hacer clic en el ícono del micrófono, tu solicitud
+            se transcribe automáticamente en la caja de texto para confirmación posterior.</p>
+        </div>
+      </div>
+    </div>
   </section>
-  
+
   <hr>
-  
+
   <!-- Seccion de desarrolladores -->
   <section class="desarrolladores" id="desarrolladores">
+    <!-- Titulo de la seccion -->
     <h2>DESARROLLADORES</h2>
+    <!-- Parrafo con descripcion -->
+    <p>Este proyecto fue desarrollado en estrecha colaboración entre miembros de la
+      comunidad estudiantil y bajo la dirección de dos profesoras de la ESCOM. Su objetivo principal es brindar
+      asistencia en trámites y servicios sobre Trabajo Terminal, Titulación y Servicio Social.</p>
+    <!-- Imagenes -->
+    <div class="contenedor_desarrolladores">
+      <div class="fila_desarrolladores">
+        <div class="perfil_desarrollador">
+          <img src="./assets/img/desarrolador.png" alt="Hernández López Bryan">
+          <p>Hernández López Bryan<br>(Alumno de ESCOM)</p>
+        </div>
+        <div class="perfil_desarrollador">
+          <img src="./assets/img/desarrolador.png" alt="Martínez Islas Armando Samir">
+          <p>Martínez Islas Armando Samir<br>(Alumno de ESCOM)</p>
+        </div>
+        <div class="perfil_desarrollador">
+          <img src="./assets/img/desarrolador.png" alt="Soto Yañez Jairo">
+          <p>Soto Yañez Jairo<br>(Alumno de ESCOM)</p>
+        </div>
+      </div>
+      <div class="fila_desarrolladores">
+        <div class="perfil_desarrollador">
+          <img src="./assets/img/directora.png" alt="M. en C. Agustín Domínguez Verónica">
+          <p>M. en C. Agustín Domínguez Verónica<br>(Directora TT)</p>
+        </div>
+        <div class="perfil_desarrollador">
+          <img src="./assets/img/directora.png" alt="M. en C. Maldonado Castillo Idalia">
+          <p>M. en C. Maldonado Castillo Idalia<br>(Directora TT)</p>
+        </div>
+      </div>
+    </div>
+
   </section>
+
+  <!-- Header -->
+  <!-- <footer>
+    <a href="#" class="logo">AVI 3D</a>
+    <nav class="navbar">
+      <a href="#inicio" class="navbar_link">Inicio</a>
+      <a href="#funciones" class="navbar_link">Funciones</a>
+      <a href="#desarrolladores" class="navbar_link">Desarrolladores</a>
+    </nav>
+    <div class="buttons_group">
+      <a href="#" class="group_button btn_header">Ver modelo 3D</a>
+      <a href="#" class="group_button btn_menu"><i class='bx bx-menu-alt-right'></i></a>
+    </div>
+  </footer> -->
 
   <!-- Scrip GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
