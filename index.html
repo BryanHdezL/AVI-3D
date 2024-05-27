@@ -1,0 +1,66 @@
+<!-- Pagina 'Landing page' -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titulo de la pagina -->
+  <title>AVI 3D</title>
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="./assets/css/landing_page.css">
+  <!-- Box-icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Model-viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo">AVI 3D</a>
+    <nav class="navbar">
+      <a href="#inicio" class="navbar_link">Inicio</a>
+      <a href="#funciones" class="navbar_link">Funciones</a>
+      <a href="#desarrolladores" class="navbar_link">Desarrolladores</a>
+    </nav>
+    <div class="buttons_group">
+      <a href="#" class="group_button btn_header">Ver modelo 3D</a>
+      <a href="#" class="group_button btn_menu"><i class='bx bx-menu-alt-right'></i></a>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="content">
+    <!-- Contenido de texto -->
+    <div class="content_text">
+      <h1>¡Hola ESCOMunidad!</h1>
+      <p>¿Tienes problemas para encontrar un salón, laboratorio u oficina? ¿Dudas sobre Servicio Social, Trabajo
+        Terminal o Titulación? <br><br>
+        ¡AVI 3D es tu solución! Haz clic en "Ver Modelo 3D" y empiza a interactuar con el asistente virtual y el modelo
+        3D de la ESCOM.
+      </p>
+      <div class="btns_text">
+        <a href="#" class="text_button">Ver modelo 3D</a>
+        <a href="#" class="text_button">Manual de usuario</a>
+      </div>
+    </div>
+    <!-- Modelo 3D -->
+    <div class="content_model">
+      <model-viewer camera-controls camera-orbit="15deg 70deg 3m" autoplay alt="Model" src="./assets/model/Render.glb">
+      </model-viewer>
+      <!-- <img src="./assets/img/model3d.png" alt="Modleo 3D"> -->
+    </div>
+  </main>
+  <hr>
+
+  <!-- Scrip GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Scrips Landing Page -->
+  <script src="./assets/js/landing_page.js"></script>
+</body>
+
+</html>
