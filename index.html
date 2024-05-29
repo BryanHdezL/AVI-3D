@@ -50,14 +50,25 @@
     </div>
     <!-- Modelo 3D -->
     <div class="content_model">
-      <model-viewer id="reveal" loading="eager" camera-controls field-of-view="45deg" touch-action="pan-y" auto-rotate
-        src="./assets/model/Render.glb" min-camera-orbit="auto auto 10%" max-camera-orbit="auto auto 100%"
-        interaction-prompt="auto" shadow-intensity="0" alt="Modelado 3D de la ESCOM"></model-viewer>
+      <!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        Uso de la libreria model-viewer para poder llevar a cabo el renderizado del modelo 3d exportado de Blender
 
-      <!-- <model-viewer camera-controls camera-orbit="210deg 70deg 1m" autoplay alt="Model" src="./assets/model/Render.glb"> -->
-      <!-- <model-viewer camera-controls camera-orbit="210deg 70deg 1m" autoplay alt="Model" src="./assets/model/Render.glb"> -->
-      <!-- </model-viewer> -->
-      <!-- <img src="./assets/img/model3d.png" alt="Modleo 3D"> -->
+        Para el uso de la etiqueta model-viewer se agrega la ruta del archivo .glb para poder mostrarlo en la web
+
+        Se utiliza una serie de parametros que se descrive a continuacion:  
+          - id                  → Consiste en el identificador del elemento, util para a futuro extrar elementos con el que interactuo el usuario
+          - loading             → Indicamos que se debe cargar el modelo, con el atributo 'eager' indicamos que se cargue incluso antes de que el usuario interactue con el
+          - camera-controls     → Permitimos acciones como desplazar, rotar y hacer zoom
+          - field-of-view       → Establecemos el campo de vision de la camara (amplitud)
+          - auto-rotate         → Activamos la animacion de rotacion automatica del modelo una vez termine de cargar
+          - src                 → Indicamos la rura del archivo a renderizar
+          - interaction-prompt  → Muestra animacion de como interactuar con el modelo con 'auto'
+          - alt                 → Texto alternativo por si no se carga el modelo, conocer que elemento deberia de ir en la pagina
+       ----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+      <model-viewer id="model3d" loading="eager" camera-controls field-of-view="45deg" auto-rotate
+        src="./assets/model/Render.glb" min-camera-orbit="auto auto 10%" max-camera-orbit="auto auto 100%"
+        interaction-prompt="auto" alt="Modelado 3D de la ESCOM"></model-viewer>
     </div>
   </main>
 
@@ -69,19 +80,24 @@
     <h2>FUNCIONES</h2>
     <!-- Contenedor de funciones -->
     <div class="contenedor_funciones">
+
       <!-- Funcion de modeado 3D -->
       <div class="contenedor_funcion">
+        <!-- Contenedor para el GIF de la funcion -->
         <div class="funcion_gif">
           <img src="./assets/img/modelo.gif" alt="Ejemplo GIF">
         </div>
+        <!-- Descripcion de la funcion de Modelo 3D -->
         <div class="funcion_texto">
           <h3>INTERACCIÓN CON MODELO 3D</h3>
           <p>Puedes interactuar con el modelo 3D de la ESCOM al desplazar el cursos sobre él, además
             de explorar la ubicación de salones y oficinas dentro de las instalaciones.</p>
         </div>
       </div>
+
       <!-- Funcion de consultas por texto -->
       <div class="contenedor_funcion">
+        <!-- Descripcion de la funcion de consultas por texto -->
         <div class="funcion_texto">
           <h3>CONSULTAS POR TEXTO</h3>
           <p>Utiliza la caja de texto para realizar consultas al modelo de Inteligencia Artificial y obtener respuestas
@@ -91,11 +107,13 @@
           <img src="./assets/img/texto.gif" alt="Ejemplo GIF">
         </div>
       </div>
+      
       <!-- Funcion de consultas por voz -->
       <div class="contenedor_funcion">
         <div class="funcion_gif">
           <img src="./assets/img/voz.gif" alt="Ejemplo GIF">
         </div>
+        <!-- Descripcion de la funcion de consultas por voz -->
         <div class="funcion_texto">
           <h3>CONSULTAS POR VOZ</h3>
           <p>Tienes la opción de hacer consultas mediante tuu voz. Al hacer clic en el ícono del micrófono, tu solicitud
@@ -117,25 +135,33 @@
       asistencia en trámites y servicios sobre Trabajo Terminal, Titulación y Servicio Social.</p>
     <!-- Imagenes -->
     <div class="contenedor_desarrolladores">
+      <!-- Fila de desarrolladores -->
       <div class="fila_desarrolladores">
+        <!-- Desarollador Bryan -->
         <div class="perfil_desarrollador">
           <img src="./assets/img/desarrolador.png" alt="Hernández López Bryan">
           <p>Hernández López Bryan<br>(Alumno de ESCOM)</p>
         </div>
+        <!-- Desarollador Armando -->
         <div class="perfil_desarrollador">
           <img src="./assets/img/desarrolador.png" alt="Martínez Islas Armando Samir">
           <p>Martínez Islas Armando Samir<br>(Alumno de ESCOM)</p>
         </div>
+        <!-- Desarollador Jairo -->
         <div class="perfil_desarrollador">
           <img src="./assets/img/desarrolador.png" alt="Soto Yañez Jairo">
           <p>Soto Yañez Jairo<br>(Alumno de ESCOM)</p>
         </div>
       </div>
+
+      <!-- Fila de desarrolladores -->
       <div class="fila_desarrolladores">
+        <!-- Directora Veronica -->
         <div class="perfil_desarrollador">
           <img src="./assets/img/directora.png" alt="M. en C. Agustín Domínguez Verónica">
           <p>M. en C. Agustín Domínguez Verónica<br>(Directora TT)</p>
         </div>
+        <!-- Directora Idalia -->
         <div class="perfil_desarrollador">
           <img src="./assets/img/directora.png" alt="M. en C. Maldonado Castillo Idalia">
           <p>M. en C. Maldonado Castillo Idalia<br>(Directora TT)</p>
