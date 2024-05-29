@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Titulo de la pagina -->
   <title>AVI 3D</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/img/IA.ico">
   <!-- Estilos CSS -->
   <link rel="stylesheet" href="./assets/css/landing_page.css">
   <!-- Box-icons -->
@@ -38,7 +40,7 @@
       <h1>¡Hola ESCOMunidad!</h1>
       <p>¿Tienes problemas para encontrar un salón, laboratorio u oficina? ¿Dudas sobre Servicio Social, Trabajo
         Terminal o Titulación? <br><br>
-        ¡AVI 3D es tu solución! Haz clic en "Ver Modelo 3D" y empiza a interactuar con el asistente virtual y el modelo
+        ¡AVI 3D es tu solución! Haz clic en "Ver Modelo 3D" y empieza a interactuar con el asistente virtual y el modelo
         3D de la ESCOM.
       </p>
       <div class="btns_text">
@@ -48,8 +50,13 @@
     </div>
     <!-- Modelo 3D -->
     <div class="content_model">
-      <model-viewer camera-controls camera-orbit="210deg 70deg 1m" autoplay alt="Model" src="./assets/model/Render.glb">
-      </model-viewer>
+      <model-viewer id="reveal" loading="eager" camera-controls field-of-view="45deg" touch-action="pan-y" auto-rotate
+        src="./assets/model/Render.glb" min-camera-orbit="auto auto 10%" max-camera-orbit="auto auto 100%"
+        interaction-prompt="auto" shadow-intensity="0" alt="Modelado 3D de la ESCOM"></model-viewer>
+
+      <!-- <model-viewer camera-controls camera-orbit="210deg 70deg 1m" autoplay alt="Model" src="./assets/model/Render.glb"> -->
+      <!-- <model-viewer camera-controls camera-orbit="210deg 70deg 1m" autoplay alt="Model" src="./assets/model/Render.glb"> -->
+      <!-- </model-viewer> -->
       <!-- <img src="./assets/img/model3d.png" alt="Modleo 3D"> -->
     </div>
   </main>
